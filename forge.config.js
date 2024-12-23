@@ -63,6 +63,18 @@ module.exports = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'thomaspan-ym',
+          name: 'my-app'
+        },
+        prerelease: true
+      }
+    }
+  ]
   // publishers: [
   //   {
   //     name: '@electron-forge/publisher-nucleus',
